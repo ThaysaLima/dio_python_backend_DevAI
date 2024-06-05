@@ -4,6 +4,9 @@ print(idade)
 DEBUG = True #constante, convenção usada pelos programadores. 
 
 
+cidade, estado = "Fortaleza", "Ceará" #aqui pode ser com ou sem parenteses depois do = 
+
+
 nome = "thaysa"
 idade = 28
 
