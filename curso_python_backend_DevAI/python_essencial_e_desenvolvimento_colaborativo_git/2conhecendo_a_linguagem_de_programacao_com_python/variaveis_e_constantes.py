@@ -11,3 +11,5 @@ print(nome, idade)
 
 limite_saque_diario = 1000 
 limteSaqueDiario = 100 #usado tb, mas nem sempre em python
+
+BRAZILIAN_STATES = ["SP", "CE", "PE"]
