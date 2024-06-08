@@ -2,7 +2,7 @@
 
 <p align="center">
   💻 Estudante de Programação | 🌍 Apaixonada por Tecnologia
-</p><br>
+</p>
 
 <p align="center"> 
     💻 | Esse repositório contém todo o conteúdo do curso que estou atualmente fazendo de Python AI Backend Developer, pela DIO | 🌻
