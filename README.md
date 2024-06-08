@@ -21,7 +21,7 @@
 
 ## 📫 Contato
 
-[![Gmail Badge](https://img.shields.io/badge/-ThaysaLima-006bed?style=flat-square&logo=Gmail&logoColor=white&link=mailto:https://mail.google.com/mail/u/0/#inbox)](mailto:{Thaysa})
+[![Gmail Badge](https://img.shields.io/badge/-ThaysaLima-006bed?style=flat-square&logo=Gmail&logoColor=white&link=mailto:https://mail.google.com/mail/u/0/#inbox)](mailto:thayprl01@gmail.com)
 [![Linkedin: Ellen](https://img.shields.io/badge/-ThaysaLima-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thaysa-lima/)](https://www.linkedin.com/in/thaysa-lima/)
 <br><br>
 
