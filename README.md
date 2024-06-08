@@ -8,7 +8,7 @@
     💻 | Esse repositório contém todo o conteúdo do curso que estou atualmente fazendo de Python AI Backend Developer, pela DIO | 🌻
 </p>
 
-<h2>
+<h2 align="center">
     💻 | Estou com o curso em andamento, logo esse readme irá sendo atualizado consoante irei completando o curso | 🌻
 </h2>
 
