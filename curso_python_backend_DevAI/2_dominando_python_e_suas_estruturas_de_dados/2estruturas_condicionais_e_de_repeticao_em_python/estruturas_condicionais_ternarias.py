@@ -1,4 +1,4 @@
-# Aula 03
+# Aula 02.2
 saldo = 2000
 saque = 500
 
