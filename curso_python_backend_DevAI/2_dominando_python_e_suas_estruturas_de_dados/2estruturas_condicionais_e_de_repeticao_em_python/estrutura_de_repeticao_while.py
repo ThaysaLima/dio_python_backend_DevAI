@@ -7,3 +7,6 @@ while opcao != 0:
         print("Sacando...")
     elif opcao == 2: 
         print("Mostrando o extrato...")
+
+else:
+    print("Obrigado por usar o nosso sistema bancário, até breve!")
