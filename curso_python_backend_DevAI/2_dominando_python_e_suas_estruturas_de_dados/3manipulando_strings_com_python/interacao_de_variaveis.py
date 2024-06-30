@@ -14,3 +14,10 @@ print("Olá, e chamo {} e tenho {}. Nasci na cidade de {} e atualmente atuo como
 
 #3ª maneira, f-string e a mais utilizada. 
 print(f"Olá, meu nome é {nome}, tenho {idade} anos. Nasci na cidade de {cidade} e atualmente atuo como {profissao}")
+
+#Há como formatar o f-string também. 
+
+PI = 3.14159
+print(f"O valor de PI: {PI:.2f}") #Esse .2f significa quantas casas decimais eles irão utilizar. >>> O valor de PI: 3.14
+
+print(f"O valor de PI: {PI: 10.2f}") #Esse 10.2f significa que 10 será os espaços contados até a tring, e o 2f é as casas decimais. >>> O valor de PI:          3.14
