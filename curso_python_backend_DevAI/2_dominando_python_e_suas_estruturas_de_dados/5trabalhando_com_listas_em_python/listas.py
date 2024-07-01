@@ -49,3 +49,9 @@ print(lista[1:3]) # >>> h, a. Vai do 1 até o 2
 print(lista[0:3:2]) # >>> T, a. Vai do 0 até o 2 pulando de 2 em 2 
 print(lista[::]) # >>> T, h, a, y, s, a. Vai me dar tudo
 print(lista[::-1]) # >>> a, s, y, a, h, T. Vai me tar tudo invertido
+
+# Iteração de listas, a forma mais comum é com o comando FOR.
+carros = ["gol", "pálio", "celta", "SW4"]
+
+for carro in carros:
+    print(carro) # não irá retornar em lista/objeto
