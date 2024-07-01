@@ -37,3 +37,15 @@ matriz = [
 print(matriz[0]) # >>> [1, "a", 2], vai dar acesso apenas a linha completa.
 print(matriz[0][1]) # >>> "a", o primeiro [] é a linha e o segundo é a coluna. 
 print(matriz[0][-1]) # >>> 2, também podemos usar os índices negativos. 
+
+# Fatiamento, estrair conjuntos de valores de uma sequência. 
+# start : stop [:step], onde o start e o step tem o número incluso e o stop não é incluso. 
+
+lista = ["T", "h", "a", "y", "s", "a"]
+
+print(lista[2:]) # >>> a, y, s, a. começa do 2 a seguir. 
+print(lista[:2]) # >>> T, h. Vai do 0 até o 1.  
+print(lista[1:3]) # >>> h, a. Vai do 1 até o 2
+print(lista[0:3:2]) # >>> T, a. Vai do 0 até o 2 pulando de 2 em 2 
+print(lista[::]) # >>> T, h, a, y, s, a. Vai me dar tudo
+print(lista[::-1]) # >>> a, s, y, a, h, T. Vai me tar tudo invertido
