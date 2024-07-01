@@ -61,3 +61,21 @@ carros2 = ["gol", "pálio", "celta", "SW4"]
 
 for indice,carro in enumerate(carros):
     print(f"{indice} : {carro}")
+
+# Compreensão de listas
+
+#V1
+numeros = [1, 3, 56, 9, 34, 22, 67, 93]
+pares = []
+
+for numero in numeros:
+    if numero %2 == 0: 
+        pares.append(numero)
+
+print(pares)
+
+#V2
+numeros2 = [1, 3, 56, 9, 34, 22, 67, 93, 2]
+pares2 = [numero2 for numero2 in numeros2 if numero2 % 2 == 0]
+
+print(pares2)
