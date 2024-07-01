@@ -37,4 +37,3 @@ matriz = [
 print(matriz[0]) # >>> [1, "a", 2], vai dar acesso apenas a linha completa.
 print(matriz[0][1]) # >>> "a", o primeiro [] é a linha e o segundo é a coluna. 
 print(matriz[0][-1]) # >>> 2, também podemos usar os índices negativos. 
-print(matriz[])
