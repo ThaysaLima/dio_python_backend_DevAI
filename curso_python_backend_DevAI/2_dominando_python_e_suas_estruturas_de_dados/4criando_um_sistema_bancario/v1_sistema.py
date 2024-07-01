@@ -5,28 +5,38 @@
 #              3 - Extrato, vai ter que mostras uma lista de todos os depósitos, todos os saque e informar o valor atual da conta. O formato do valor tem que está em R$xxx.xx 
 
 
-inicio_projeto = '''
+menu = '''
     ========================== Bem vindos ao Banco Py ==========================
 
-    1 - Depositar 
-    2 - Sacar 
-    3 - Extrato
-    0 - Sair
+    d - Depositar 
+    s - Sacar 
+    e - Extrato
+    q - Sair
 
     =========== Por favor insira a baixo o número da ação pretendida ===========
 
 '''
 
-print(inicio_projeto)
+#esse while true, vai fazer com que ele sempre repita essa opção. 
+while True:
 
-opcao_bem_vindos = int(input("Digite aqui a opção escolhida: "))
-if opcao_bem_vindos == 1:
-    print("Opção Depositar.")
-elif opcao_bem_vindos == 2:
-    print("Opção Sacar.")
-elif opcao_bem_vindos == 3: 
-    print("Opção Extrato Bancário.")
-elif opcao_bem_vindos == 0: 
-    print("Opção Sair.")
-else:
-    print("Por favor começe novamente e escolha uma opção válida.")
+    opcao_bem_vindos = input(menu)
+
+    if opcao_bem_vindos == "d":
+        print("*DEPÓSITO*")
+        deposito = float(input("Qual o valor do deposito: "))
+
+    elif opcao_bem_vindos == "s":
+        print("*SAQUE*")
+        
+    elif opcao_bem_vindos == "e": 
+        print("*EXTRATO BANCÁRIO*")
+
+    elif opcao_bem_vindos == "q": 
+        print("*SAIR*")
+        print("Obrigada pela visita, volte sempre!")
+        break
+
+    else:
+        print("Por favor começe novamente e escolha uma opção válida.")
+
