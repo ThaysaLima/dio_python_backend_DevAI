@@ -27,3 +27,17 @@ Olá, meu nome é {nome}.
 E atualmente estudo Python.
 '''
 print(mensagem3)
+
+# Exemplo, para quando quer fazer um menu mais bonitinho 
+
+menu_exemplo = '''
+    ======== MENU ========
+
+    1 - Sacar
+    2 - Depositar 
+    0 - Sair
+
+    ======================
+
+'''
+print(menu_exemplo)
