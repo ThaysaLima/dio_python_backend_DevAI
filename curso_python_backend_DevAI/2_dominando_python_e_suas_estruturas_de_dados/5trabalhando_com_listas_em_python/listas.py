@@ -55,3 +55,9 @@ carros = ["gol", "pálio", "celta", "SW4"]
 
 for carro in carros:
     print(carro) # não irá retornar em lista/objeto
+
+# Função enumarate
+carros2 = ["gol", "pálio", "celta", "SW4"]
+
+for indice,carro in enumerate(carros):
+    print(f"{indice} : {carro}")
