@@ -79,3 +79,20 @@ numeros2 = [1, 3, 56, 9, 34, 22, 67, 93, 2]
 pares2 = [numero2 for numero2 in numeros2 if numero2 % 2 == 0]
 
 print(pares2)
+
+# Modificando valores
+
+#V1
+numeros3 = [1, 3, 56, 9, 34, 22, 67, 93]
+quadrado = []
+
+for numero3 in numeros3:
+    quadrado.append(numero3 ** 2)
+
+print(quadrado) # >>> [1, 9, 3136, 81, 1156, 484, 4489, 8649]
+
+#V2
+numeros4 = [1, 3, 56, 9, 34, 22, 67, 93]
+
+quadrado2 = [numero4 ** 2 for numero4 in numeros4]
+print(quadrado2)
