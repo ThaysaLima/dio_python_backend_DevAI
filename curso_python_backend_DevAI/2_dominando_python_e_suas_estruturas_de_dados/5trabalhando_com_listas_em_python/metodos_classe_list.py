@@ -101,10 +101,16 @@ linguagens9 = ["python", "js", "c", "java", "csharp"]
 linguagens9.sort(key=lambda x: len(x), reverse=True) 
 print(linguagens9) # >>> ['python', 'csharp', 'java', 'js', 'c']
 
-# len 
+# a.len(interável): vai contar e dizer o tamanho da lista. 
 
+linguagens10 = ["python", "js", "c", "java", "csharp"]
+print(len(linguagens10)) # >>> 5
 
+# a.sorted(interável, key=None, reverse=False): função build-in (inclusa na linguagem). Ela diferente do sort vai criar um nova lista ao inves de mexer na original 
 
-# sorted 
+linguagens11 = ["python", "js", "c", "java", "csharp"]
+
+print(sorted(linguagens11, key=lambda x: len(x)))  # >>> ["c", "js", "java", "python", "csharp"]
+print(sorted(linguagens11, key=lambda x: len(x), reverse=True))  # >>> ["python", "csharp", "java", "js", "c"]
 
 
