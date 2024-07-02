@@ -30,13 +30,22 @@ print(id(l3), id(lista3)) #São objetos diferentes, o que eu faço em l3 não in
 l3[0] = 2
 print(l3) # >>> [2, 'Thaysa Lima', [20, 50, 67]]
 
-# count
+# count: irá contar quantas vezes algo aparece na lista. 
 
+cores = ["Azul", "Verde", "Verde", "Vermelho", "Preto", "Vermelho", "Amarelo", "Azul"]
 
+print(cores.count("Vermelho")) # >>> 2. O vermelho apareceu 2 vezes na mesma lista
+print(cores.count("Preto")) # >>> 1
 
-# extend
+# extend: junção de duas listas, se nessas duas listas tiverem objetos iguais elas vão se repetir quanod juntarem. 
 
+linguagens = ["python", "c", "js", "r"]
 
+print(linguagens)
+
+linguagens.extend(["java", "csharp", "c"])
+
+print(linguagens) # >>> ['python', 'c', 'js', 'r', 'java', 'csharp', 'c']
 
 # index
 
