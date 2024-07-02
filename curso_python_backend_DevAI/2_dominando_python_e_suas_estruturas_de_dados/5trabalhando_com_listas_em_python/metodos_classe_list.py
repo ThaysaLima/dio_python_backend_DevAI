@@ -75,8 +75,31 @@ linguagens5 = ["python", "js", "c", "java", "csharp"]
 linguagens5.reverse()
 print(linguagens5) # >>> ['csharp', 'java', 'c', 'js', 'python']
 
-# sort
+# a.sort(, key=None, reverse=False): há 4 maneiras de utilizar o sort
 
+#1) se ele for sort(): vai apenas ordenar a lista em ordem alfabética ("ABC"). 
+
+linguagens6 = ["python", "js", "c", "java", "csharp"]
+linguagens6.sort()  
+print(linguagens6) # >>> ["c", "csharp", "java", "js", "python"]
+
+#2) se for sort(reverse=True): ele vai colocar de tras para frente em ordem alfabética ("CBA").
+
+linguagens7 = ["python", "js", "c", "java", "csharp"]
+linguagens7.sort(reverse=True) 
+print(linguagens7) # >>> ['python', 'js', 'java', 'csharp', 'c']
+
+#3) se for sort(key=Lamba x:len(x)): ele vai colocar em ordem CRESCENTE de tamanho da palavra. 
+
+linguagens8 = ["python", "js", "c", "java", "csharp"]
+linguagens8.sort(key=lambda x: len(x)) 
+print(linguagens8) # >>> ["c", "js", "java", "python", "csharp"]
+
+#4) se for sort(key=Lamba x:len(x), reverse=True): ele vai colocar em ordem DECRESCENTE de tamanho da palavra. 
+
+linguagens9 = ["python", "js", "c", "java", "csharp"]
+linguagens9.sort(key=lambda x: len(x), reverse=True) 
+print(linguagens9) # >>> ['python', 'csharp', 'java', 'js', 'c']
 
 
 # len 
