@@ -61,13 +61,19 @@ print(linguagens3.pop()) # >>> csharp, o último da lista.
 print(linguagens3.pop(2)) # >>> c, ele vai me retorna a posição 3. 
 print(linguagens3) # >>> ['python', 'js', 'java'], vai me retornar o que restou na lista. 
 
-# remove 
+# a.remove(x): apenas remove algo da lsita, diferente do pop ele não retorna. 
 
+linguagens4 = ["python", "js", "c", "java", "csharp"]
 
+linguagens4.remove("c")
+print(linguagens4) # >>> ['python', 'js', 'java', 'csharp']
 
-# reverse
+# a.reverse(): inverte a ordem da lista. 
 
+linguagens5 = ["python", "js", "c", "java", "csharp"]
 
+linguagens5.reverse()
+print(linguagens5) # >>> ['csharp', 'java', 'c', 'js', 'python']
 
 # sort
 
