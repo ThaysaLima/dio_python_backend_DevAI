@@ -113,4 +113,9 @@ linguagens11 = ["python", "js", "c", "java", "csharp"]
 print(sorted(linguagens11, key=lambda x: len(x)))  # >>> ["c", "js", "java", "python", "csharp"]
 print(sorted(linguagens11, key=lambda x: len(x), reverse=True))  # >>> ["python", "csharp", "java", "js", "c"]
 
+# extra 
+# a.insert(i, x): vai inserir um item na posição desejada. 
 
+linguagens12 = ["python", "js", "c", "java", "csharp"]
+linguagens12.insert(3, "Testando")
+print(linguagens12) # >>> ['python', 'js', 'c', 'Testando', 'java', 'csharp']
