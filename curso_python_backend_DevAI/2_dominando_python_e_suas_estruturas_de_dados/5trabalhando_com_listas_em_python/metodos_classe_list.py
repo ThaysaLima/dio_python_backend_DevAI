@@ -101,7 +101,6 @@ linguagens9 = ["python", "js", "c", "java", "csharp"]
 linguagens9.sort(key=lambda x: len(x), reverse=True) 
 print(linguagens9) # >>> ['python', 'csharp', 'java', 'js', 'c']
 
-
 # len 
 
 
