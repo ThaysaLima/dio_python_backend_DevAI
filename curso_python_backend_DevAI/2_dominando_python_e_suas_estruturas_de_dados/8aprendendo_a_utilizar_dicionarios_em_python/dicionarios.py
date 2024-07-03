@@ -24,5 +24,19 @@ print(pessoa) # {'nome': 'thaysa', 'idade': 21, 'profissão': 'programadora', 'n
 
 print(pessoa["profissão"]) # programadora
 
+# DICIONARIOS ANINHADOS, a chave tem que ser imutável, então o valor será um outro dicionário.
+
+contatos_empresa = {
+
+    "nathan@gmail.com" : {"nome":"nathan", "número":914225144},
+    "thaysa@gmail.com" : {"nome":"thaysa", "número":936749530},
+    "francisca@gmail.com" : {"nome":"francisca", "número":936749531},
+
+}
+
+# para acessar = nome_dicionario[chave][chave_dicinario_interno]
+
+print(contatos_empresa["thaysa@gmail.com"]["número"]) # 936749530
+
 
 
