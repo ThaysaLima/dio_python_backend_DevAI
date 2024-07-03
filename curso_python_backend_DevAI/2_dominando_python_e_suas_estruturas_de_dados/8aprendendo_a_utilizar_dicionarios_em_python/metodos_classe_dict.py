@@ -65,16 +65,65 @@ dicionario = {'nome': 'thaysa', 'idade': 20, 'profissão': 'programadora', 'cont
 
 print(dicionario.keys()) # dict_keys(['nome', 'idade', 'profissão', 'contato'])
 
-# 7) {}.pop
+# 7) {}.pop, remover um valor do dicionário e retornar.
 
-# 8) {}.popitem
+dicionario = {'nome': 'thaysa', 'idade': 20, 'profissão': 'programadora', 'contato': 936749530}
+print(dicionario.pop('profissão')) # programadora
+print(dicionario) # {'nome': 'thaysa', 'idade': 20, 'contato': 936749530}
 
-# 9) {}.setdefault
 
-# 10) {}.update 
+# 8) {}.popitem,retira os itens na sequência. 
 
-# 11) {}.values
+dicionario = {'nome': 'thaysa', 'idade': 20, 'profissão': 'programadora', 'contato': 936749530}
+print(dicionario.popitem()) # ('contato', 936749530)
+print(dicionario) # {'nome': 'thaysa', 'idade': 20, 'profissão': 'programadora'}
 
-# 12) in 
 
-# 13) del 
+# 9) {}.setdefault, vai atribuir um valor a uma chave caso ela não exista. 
+
+dicionario = {'nome': 'thaysa', 'idade': 20, 'profissão': 'programadora', 'contato': 936749530}
+print(dicionario.setdefault('nome','thata')) # thaysa
+                    # aqui ele vai verificar se existe a chave 'nome', se existir ele vai apenas ignorar, se não ele vai criar a chave 'nome' e atribuir o valor de 'thata'.
+
+print(dicionario.setdefault('cidade', 'fortaleza')) # fortaleza, pois a chave cidade não existia. 
+print(dicionario) # {'nome': 'thaysa', 'idade': 20, 'profissão': 'programadora', 'contato': 936749530, 'cidade': 'fortaleza'}
+
+# 10) {}.update, atualiza o dicionário para outro dicionário. 
+
+dicionario = {'nome': 'thaysa', 'idade': 20, 'profissão': 'programadora', 'contato': 936749530}
+dicionario.update({'nome':'thata', 'idade':21, 'profissão': 'analista de dados', 'contato':936749531})
+print(dicionario) # {'nome': 'thata', 'idade': 21, 'profissão': 'analista de dados', 'contato': 936749531} 
+
+# e o que acontece que não tiver o dados que estamos atualizando? ele vai criar esse novo dado 
+
+dicionario.update({'nome1':'nat', 'idade1':24, 'profissão1':'psicólogo', 'cantato1':921546789})
+print(dicionario) # {'nome': 'thata', 'idade': 21, 'profissão': 'analista de dados', 'contato': 936749531, 'nome1': 'nat', 'idade1': 24, 'profissão1': 'psicólogo', 'cantato1': 921546789}
+
+# 11) {}.values, retorna apenas os valores
+
+dicionario = {'nome': 'thaysa', 'idade': 20, 'profissão': 'programadora', 'contato': 936749530}
+print(dicionario.values()) # dict_values(['thaysa', 20, 'programadora', 936749530])
+
+# 12) in, saber se a chave existe dentro do dicionário ou não. 
+
+resultado = 'nome' in dicionario
+print(resultado) # True
+
+resultado2 = 'cabeça' in dicionario
+print(resultado2) # False
+
+# 13) del, outra forma de excluir um valor. 
+
+dicionario = {'nome': 'thaysa', 'idade': 20, 'profissão': 'programadora', 'contato': 936749530}
+del dicionario['nome']
+print(dicionario) # {'idade': 20, 'profissão': 'programadora', 'contato': 936749530}
+
+# 13) del, dicionários de dicionários
+
+dicionario = {
+    'usuario1': {'nome': 'thaysa', 'idade': 20},
+    'usuario2': {'nome': 'joao', 'idade': 25}
+}
+
+del dicionario['usuario1']['idade']  # Remove o item 'idade' do dicionário 'usuario1'
+print(dicionario) # {'usuario1': {'nome': 'thaysa'}, 'usuario2': {'nome': 'joao', 'idade': 25}}
