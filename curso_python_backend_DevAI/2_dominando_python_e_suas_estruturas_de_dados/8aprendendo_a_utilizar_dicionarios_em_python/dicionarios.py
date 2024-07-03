@@ -38,5 +38,9 @@ contatos_empresa = {
 
 print(contatos_empresa["thaysa@gmail.com"]["número"]) # 936749530
 
+# iteração/percorrer o dicionário FOR
 
+for chave,valor in contatos_empresa.items():
+    print(chave,valor) 
 
+#.items() retorna uma lista de tuplas. 
