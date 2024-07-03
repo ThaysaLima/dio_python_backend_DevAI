@@ -63,4 +63,18 @@ print(resultado8) # False
 resultado9 = conj_l.issuperset(conj_k)  
 print(resultado9) # True
 
+# 7) {}.isdisjoint, vai relacionar se os números tem alguma coincidência dentro dos conjuntos em si. 
+
+conj_m = {1,2,3,4,5}
+conj_n = {6,7,8,9}
+
+conj_o = {1,0} 
+
+# o conjunto n NÃO tem NADA relacionado com o conjunto m 
+resultado10 = conj_m.isdisjoint(conj_n)
+print(resultado10) #TRUE
+
+# o conjunto o tem um item 1 igual ao conjunto m, logo ele está relacionado
+resultado11 = conj_m.isdisjoint(conj_o)
+print(resultado11) #FALSE
 
