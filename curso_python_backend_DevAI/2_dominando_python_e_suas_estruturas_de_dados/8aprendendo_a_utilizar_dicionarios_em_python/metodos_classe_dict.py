@@ -39,19 +39,31 @@ print(dict.fromkeys(['nome','contato'], 'vazio')) # {'nome': 'vazio', 'contato':
 
 # 4) {}.get, outra maneira de acessar. Se tentarmos acessar uma chave que não existe vai dar keyerror
 
-contatos1 = {
+contatos = {
     'nome': 'thaysa', 'idade': 20, 'contato':'xxxxxxxxx' 
             }
 
-print(contatos1.get('nome')) # thaysa
+print(contatos.get('nome')) # thaysa
 
 # pode tambem colocar um valor para ele retornar se a chave não existir 
 
-print(contatos1.get('chave', {})) # {}, como não existe 'chave' ele retornou o que foi pedido. 
+print(contatos.get('chave', {})) # {}, como não existe 'chave' ele retornou o que foi pedido. 
 
-# 5) {}.items
+# 5) {}.items, retorna uma lista de tuplas
 
-# 6) {}.keys
+contatos = {
+    'thaysa@gmail.com': {'nome': 'thaysa', 'idade': 20, 'contato':'xxxxxxxxx'},
+    'cesar@gmail.com' : {'nome': 'cesar', 'idade': 24, 'contato':'xxxxxxxxx'},
+    'francisca@gmail.com' : {'nome': 'francisca', 'idade': 52, 'contato': 'xxxxxxxxx'}, 
+            }
+
+print(contatos.items()) # dict_items([('thaysa@gmail.com', {'nome': 'thaysa', 'idade': 20, 'contato': 'xxxxxxxxx'}), ('cesar@gmail.com', {'nome': 'cesar', 'idade': 24, 'contato': 'xxxxxxxxx'}), ('francisca@gmail.com', {'nome': 'francisca', 'idade': 52, 'contato': 'xxxxxxxxx'})])
+
+# 6) {}.keys, retorna apenas as chaves
+
+dicionario = {'nome': 'thaysa', 'idade': 20, 'profissão': 'programadora', 'contato': 936749530}
+
+print(dicionario.keys()) # dict_keys(['nome', 'idade', 'profissão', 'contato'])
 
 # 7) {}.pop
 
