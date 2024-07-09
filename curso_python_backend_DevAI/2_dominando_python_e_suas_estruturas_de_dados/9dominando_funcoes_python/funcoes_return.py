@@ -1,4 +1,4 @@
-# Continuação Aula 1
+# Continuação Aula 1.2
 
 #calcule o total de uma lista de números: 
 
