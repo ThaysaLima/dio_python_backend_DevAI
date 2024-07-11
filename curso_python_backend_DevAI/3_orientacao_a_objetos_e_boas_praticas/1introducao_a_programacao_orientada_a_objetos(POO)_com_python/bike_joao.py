@@ -39,3 +39,14 @@ for venda in vendas:
 venda1.buzinar()
 venda1.parar()
 venda1.correr()
+
+#Acessar
+print(venda1.cor, venda1.modelo, venda1.ano, venda1.valor)
+
+#Novo exemplo:
+venda2 = Bicicleta("Vermelha", "Cannoy", 2013, 34.788)
+vendas.append(venda2)
+
+for venda in vendas:
+    print(venda)
+
