@@ -35,3 +35,7 @@ vendas.append(venda1)
 
 for venda in vendas:
     print(venda)
+
+venda1.buzinar()
+venda1.parar()
+venda1.correr()
