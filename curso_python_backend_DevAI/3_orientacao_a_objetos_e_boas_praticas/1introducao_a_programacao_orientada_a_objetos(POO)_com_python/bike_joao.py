@@ -50,3 +50,7 @@ vendas.append(venda2)
 for venda in vendas:
     print(venda)
 
+# Ambos são a mesma coisa.
+Bicicleta.buzinar(venda2) 
+venda2.buzinar()
+
