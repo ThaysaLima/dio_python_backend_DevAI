@@ -23,8 +23,13 @@ class Bicicleta:
     #     return f"Bicicleta(cor= {self.cor}, modelo= {self.modelo}, ano= {self.ano}, valor= R${self.valor})"
     
     #podemos usar tb o __str__ = é que uma represetação mais amigável para o user. 
-    def __str__(self): 
-        return f"Bicicleta de cor {self.cor}, no modelo {self.modelo}, do ano de {self.ano}, com o valor R${self.valor}"
+    # def __str__(self): 
+    #     return f"Bicicleta de cor {self.cor}, no modelo {self.modelo}, do ano de {self.ano}, com o valor R${self.valor}"
+    
+    # outra maneira
+
+    def __str__(self):
+        return f"{self.__class__.__name__}: {', '.join([f'{chave}={valor}' for chave, valor in self.__dict__.items()])}"
         
     
 vendas = []
