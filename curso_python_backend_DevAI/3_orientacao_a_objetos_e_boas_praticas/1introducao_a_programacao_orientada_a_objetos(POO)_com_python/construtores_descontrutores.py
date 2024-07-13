@@ -16,7 +16,28 @@ def criar_cachorro():
     c = Cachorro("Zeus", "Branco", False)
     print(c.nome)
 
-# c = Cachorro("Chappie", "Amarelo")
-# c.falar()
+c = Cachorro("Chappie", "Amarelo")
+c.falar()
 
 criar_cachorro()
+
+#o del ele sempre vai ser "chamado" no final. 
+# mesmo eu colocando esse monte de print, ele irá imprimir todos e APENAS no final é que ele vai deletar a instância.
+print("Olá, mundo!")
+print("Olá, mundo!")
+
+del c
+
+print("Olá, mundo!")
+print("Olá, mundo!")
+print("Olá, mundo!")
+
+# mas se eu quiser que ele remova no meio, posso simplesmente usar a palavra reservada del 
+
+# >>>
+# Olá, mundo!
+# Olá, mundo!
+# Removendo instância da classe
+# Olá, mundo!
+# Olá, mundo!
+# Olá, mundo!
