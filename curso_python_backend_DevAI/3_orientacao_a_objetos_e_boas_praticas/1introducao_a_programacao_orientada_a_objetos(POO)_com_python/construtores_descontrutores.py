@@ -6,7 +6,17 @@ class Cachorro:
         self.cor = cor
         self.acordado = acordado
 
+    def __del__(self):
+        print("Removendo instância da classe")
+
     def falar(self):
         print("Au-Au")
 
-c = Cachorro("Chappie", "Amarelo")
+def criar_cachorro():
+    c = Cachorro("Zeus", "Branco", False)
+    print(c.nome)
+
+# c = Cachorro("Chappie", "Amarelo")
+# c.falar()
+
+criar_cachorro()
