@@ -6,6 +6,7 @@ class Animal:
         return f"{self.__class__.__name__}: {', '.join([f'{chave}={valor}' for chave, valor in self.__dict__.items()])}"
         
 
+# ao tentar chamar o ornitorrinco o python vai ficar confuso com 3 argumentos, quando na verdade no def Mamifero/Ave apenas tem 2. para isso vamos usar o **kw no lugar do 3º argumento.
 
 class Mamifero(Animal):
     def __init__(self, nmr_patas, cor_pelo):
@@ -32,3 +33,4 @@ class Onitorrinco(Mamifero, Ave):
 
 ornitorrinco = Onitorrinco(2, "Verde", "Laranja")
 print(ornitorrinco) # Onitorrinco: cor_pelo=Verde, nmr_patas=2
+
