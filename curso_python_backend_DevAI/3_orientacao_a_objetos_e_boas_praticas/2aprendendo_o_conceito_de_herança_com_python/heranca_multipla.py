@@ -22,3 +22,7 @@ class Gato(Mamifero):
 
 class Onitorrinco(Mamifero, Ave):
     pass
+
+
+gato = Gato(4)
+print(gato)
