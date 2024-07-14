@@ -14,7 +14,8 @@ class Mamifero(Animal):
 
 
 class Ave(Animal):
-    def __init__(self, nmr_patas):
+    def __init__(self, nmr_patas, cor_bico):
+        self.cor_bico = cor_bico
         super().__init__(nmr_patas)
 
 
@@ -29,5 +30,5 @@ class Onitorrinco(Mamifero, Ave):
 # gato = Gato(4, "Preto")
 # print(gato) # Gato: nmr_patas= 4
 
-ornitorrinco = Onitorrinco(2, "Verde")
-print(ornitorrinco)
+ornitorrinco = Onitorrinco(2, "Verde", "Laranja")
+print(ornitorrinco) # Onitorrinco: cor_pelo=Verde, nmr_patas=2
