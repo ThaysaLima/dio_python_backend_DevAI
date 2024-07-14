@@ -26,5 +26,8 @@ class Onitorrinco(Mamifero, Ave):
     pass
 
 
-gato = Gato(4, "Preto")
-print(gato) # Gato: nmr_patas= 4
+# gato = Gato(4, "Preto")
+# print(gato) # Gato: nmr_patas= 4
+
+ornitorrinco = Onitorrinco(2, "Verde")
+print(ornitorrinco)
