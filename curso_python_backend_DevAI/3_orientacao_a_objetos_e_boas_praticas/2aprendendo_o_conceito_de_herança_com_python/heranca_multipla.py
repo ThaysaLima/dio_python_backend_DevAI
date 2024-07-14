@@ -8,16 +8,18 @@ class Animal:
 
 # ao tentar chamar o ornitorrinco o python vai ficar confuso com 3 argumentos, quando na verdade no def Mamifero/Ave apenas tem 2. para isso vamos usar o **kw no lugar do 3º argumento.
 
+#vamos apagar todos os argumentos que estão na classe filha, mas que pertencem a classe mãe (nmr_patas), com isso vamos ter que mudar o super().__init__(nmr_patas) para super().__init__(**kw)
+
 class Mamifero(Animal):
-    def __init__(self, nmr_patas, cor_pelo):
+    def __init__(self, cor_pelo, **kw):
         self.cor_pelo = cor_pelo
-        super().__init__(nmr_patas)
+        super().__init__(**kw)
 
 
 class Ave(Animal):
-    def __init__(self, nmr_patas, cor_bico):
+    def __init__(self, cor_bico, **kw):
         self.cor_bico = cor_bico
-        super().__init__(nmr_patas)
+        super().__init__(**kw)
 
 
 class Gato(Mamifero):
@@ -31,6 +33,7 @@ class Onitorrinco(Mamifero, Ave):
 # gato = Gato(4, "Preto")
 # print(gato) # Gato: nmr_patas= 4
 
-ornitorrinco = Onitorrinco(2, "Verde", "Laranja")
-print(ornitorrinco) # Onitorrinco: cor_pelo=Verde, nmr_patas=2
+# a partir do momento que colocamos os **kw lá em cima, aqui em baixo temos que nomear os argumentos 
+ornitorrinco = Onitorrinco(nmr_patas=2, cor_pelo="Verde", cor_bico="Laranja")
+print(ornitorrinco) #Onitorrinco: cor_pelo=Verde, cor_bico=Laranja, nmr_patas=2
 
