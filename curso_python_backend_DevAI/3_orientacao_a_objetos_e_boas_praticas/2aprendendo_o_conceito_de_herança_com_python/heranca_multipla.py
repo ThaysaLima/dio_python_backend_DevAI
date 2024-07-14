@@ -27,11 +27,12 @@ class Gato(Mamifero):
 
 
 class Onitorrinco(Mamifero, Ave):
-    pass
+    def __init__(self, cor_bico, cor_pelo, nmr_patas):
+        super().__init__(cor_pelo=cor_pelo, cor_bico=cor_bico, nmr_patas=nmr_patas)
 
 
 gato = Gato(nmr_patas=4, cor_pelo="Preto")
-print(gato) # Gato: nmr_patas= 4
+print(gato) # Gato: cor_pelo=Preto, nmr_patas=4
 
 # a partir do momento que colocamos os **kw lá em cima, aqui em baixo temos que nomear os argumentos 
 ornitorrinco = Onitorrinco(nmr_patas=2, cor_pelo="Verde", cor_bico="Laranja")
