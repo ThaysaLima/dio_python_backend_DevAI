@@ -30,8 +30,8 @@ class Onitorrinco(Mamifero, Ave):
     pass
 
 
-# gato = Gato(4, "Preto")
-# print(gato) # Gato: nmr_patas= 4
+gato = Gato(nmr_patas=4, cor_pelo="Preto")
+print(gato) # Gato: nmr_patas= 4
 
 # a partir do momento que colocamos os **kw lá em cima, aqui em baixo temos que nomear os argumentos 
 ornitorrinco = Onitorrinco(nmr_patas=2, cor_pelo="Verde", cor_bico="Laranja")
