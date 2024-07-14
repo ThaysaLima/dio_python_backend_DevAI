@@ -28,6 +28,8 @@ class Gato(Mamifero):
 
 class Onitorrinco(Mamifero, Ave):
     def __init__(self, cor_bico, cor_pelo, nmr_patas):
+        print(Onitorrinco.__mro__) #(<class '__main__.Onitorrinco'>, <class '__main__.Mamifero'>, <class '__main__.Ave'>, <class '__main__.Animal'>, <class 'object'>), ordem de resolução: 1º buscar na classe filha (ornitorrinco), 2º vai buscar na classe mamifero que a primeira classe mãe, 3º vai buscar na classe Ave que é a segunda classe mãe, 4º vai buscar na classe animal que é a classe avó e no final vai buscar na classe objeto que é onde há todos os objetos.  
+
         super().__init__(cor_pelo=cor_pelo, cor_bico=cor_bico, nmr_patas=nmr_patas)
 
 
