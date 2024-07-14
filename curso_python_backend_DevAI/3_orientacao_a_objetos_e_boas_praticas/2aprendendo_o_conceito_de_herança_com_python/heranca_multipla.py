@@ -9,13 +9,11 @@ class Animal:
 
 class Mamifero(Animal):
     def __init__(self, nmr_patas):
-        self.nmr_patas = nmr_patas
         super().__init__(nmr_patas)
 
 
 class Ave(Animal):
     def __init__(self, nmr_patas):
-        self.nmr_patas = nmr_patas
         super().__init__(nmr_patas)
 
 
@@ -28,4 +26,4 @@ class Onitorrinco(Mamifero, Ave):
 
 
 gato = Gato(4)
-print(gato)
+print(gato) # Gato: nmr_patas= 4
