@@ -8,7 +8,8 @@ class Animal:
 
 
 class Mamifero(Animal):
-    def __init__(self, nmr_patas):
+    def __init__(self, nmr_patas, cor_pelo):
+        self.cor_pelo = cor_pelo
         super().__init__(nmr_patas)
 
 
@@ -25,5 +26,5 @@ class Onitorrinco(Mamifero, Ave):
     pass
 
 
-gato = Gato(4)
+gato = Gato(4, "Preto")
 print(gato) # Gato: nmr_patas= 4
